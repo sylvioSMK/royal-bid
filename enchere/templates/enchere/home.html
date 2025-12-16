@@ -1,20 +1,39 @@
 {% extends 'enchere/base.html' %}
-{% load static %}
 
 {% block content %}
-<header class="hero">
+<section class="hero">
+    <div class="hero-overlay"></div>
+
     <nav class="navbar">
         <h1 class="logo">RoyalBid</h1>
         <div class="nav-links">
             <a href="{% url 'login' %}">Connexion</a>
-            <a href="{% url 'signup' %}" class="btn">S'inscrire</a>
+            <a href="{% url 'signup' %}" class="btn-glow">Inscription</a>
         </div>
     </nav>
 
     <div class="hero-content">
-        <h2>Tout se joue aux enchères</h2>
-        <p>Découvrez, enchérissez et remportez des objets uniques en toute confiance.</p>
-        <a href="{% url 'signup' %}" class="hero-btn">Commencer maintenant</a>
+        <h2><span>ENTREZ DANS</span><br>LE MONDE DES ENCHÈRES</h2>
+        <p>Une expérience premium pour vendre et remporter des objets rares.</p>
+        <a href="{% url 'signup' %}" class="cta">Commencer</a>
     </div>
-</header>
+</section>
+
+<!-- SECTION FEATURES -->
+<section class="features">
+    <div class="feature-card">
+        <h3>Enchères en direct</h3>
+        <p>Suivez les ventes en temps réel.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>Sécurité maximale</h3>
+        <p>Transactions protégées et fiables.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>Objets rares</h3>
+        <p>Accédez à des enchères exclusives.</p>
+    </div>
+</section>
 {% endblock %}

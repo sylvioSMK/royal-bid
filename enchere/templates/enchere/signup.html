@@ -3,21 +3,30 @@
 
 {% block content %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'enchere/css/auth.css' %}">
+{% endblock %}
 <div class="auth-container">
+
     <div class="auth-box">
-        <h2>Créer un compte</h2>
-        <form>
-            <input type="text" placeholder="Nom d'utilisateur" required>
+        <h2>Inscription</h2>
+        <p>Rejoignez la plateforme RoyalBid</p>
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Nom complet" required>
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Mot de passe" required>
             <input type="password" placeholder="Confirmer le mot de passe" required>
-            <button type="submit">S'inscrire</button>
+            <button type="submit">Créer un compte</button>
         </form>
+
+        <a href="{% url 'login' %}">Déjà inscrit ? Se connecter</a>
     </div>
 
     <div class="auth-image">
-        <img src="{% static 'enchere/images/enchere.jpg' %}" alt="enchère">
+        <img src="{% static 'enchere/images/enchere.jpg' %}" alt="Enchères">
     </div>
-</div>
 
+</div>
 {% endblock %}

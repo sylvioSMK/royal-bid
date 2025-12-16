@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>RoyalBid</title>
+
+    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="{% static 'enchere/css/style.css' %}">
+
+    <!-- CSS SPECIFIQUE AUX PAGES -->
+    {% block extra_css %}{% endblock %}
 </head>
 <body>
 
-{% block content %}
-{% endblock %}
+    {% block content %}{% endblock %}
 
 </body>
 </html>

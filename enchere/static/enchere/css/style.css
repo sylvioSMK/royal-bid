@@ -1,66 +1,108 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0b0e14;
+    color: #fff;
 }
 
 /* HERO */
 .hero {
+    position: relative;
     height: 100vh;
-    background: linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.55)
-    ),
-    url("../images/enchere.jpg") center/cover no-repeat;
-    color: white;
+    background: url("../images/enchere.jpg") center/cover no-repeat;
 }
 
-/* NAVBAR */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
+}
+
 .navbar {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
-    padding: 25px 60px;
+    padding: 30px 80px;
 }
 
 .logo {
-    font-size: 26px;
-    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 .nav-links a {
-    margin-left: 20px;
+    margin-left: 30px;
     color: white;
     text-decoration: none;
 }
 
-.nav-links .btn {
-    background: orange;
-    padding: 8px 15px;
-    border-radius: 4px;
+.btn-glow {
+    padding: 10px 20px;
+    border: 1px solid #00f6ff;
+    color: #00f6ff;
+    border-radius: 25px;
 }
 
 /* HERO CONTENT */
 .hero-content {
-    text-align: center;
-    margin-top: 150px;
+    position: relative;
+    z-index: 2;
+    top: 35%;
+    padding-left: 80px;
+    max-width: 600px;
 }
 
 .hero-content h2 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 48px;
-    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content span {
+    color: #00f6ff;
+    font-size: 18px;
 }
 
 .hero-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    margin: 20px 0;
+    color: #ccc;
 }
 
-.hero-btn {
-    background: orange;
-    padding: 15px 30px;
-    color: white;
+.cta {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #00f6ff;
+    color: black;
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* FEATURES */
+.features {
+    background: #0f131c;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
 }
