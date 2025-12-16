@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #1e1e2f;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar .btn {
+    background: gold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* HOME */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-buttons a {
+    margin: 10px;
+}
+
+/* AUTH PAGES */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    background: #1e1e2f;
+    color: white;
+    border: none;
+}
+
+.auth-image img {
+    width: 350px;
+    margin-left: 40px;
+    border-radius: 10px;
+}

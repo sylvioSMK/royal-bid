@@ -1,4 +1,10 @@
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
 
-def index(request):
-    return HttpResponse("Bienvenue dans l'application Enchère !")
+def home(request):
+    return render(request, 'enchere/home.html')
+
+def signup(request):
+    return render(request, 'enchere/signup.html')
+
+def login_view(request):
+    return render(request, 'enchere/login.html')

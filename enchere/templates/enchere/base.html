@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RoyalBid</title>
+    <link rel="stylesheet" href="{% static 'enchere/css/style.css' %}">
+</head>
+<body>
+
+<nav class="navbar">
+    <h1>RoyalBid</h1>
+    <div>
+        <a href="{% url 'home' %}">Accueil</a>
+        <a href="{% url 'login' %}">Connexion</a>
+        <a href="{% url 'signup' %}" class="btn">Inscription</a>
+    </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

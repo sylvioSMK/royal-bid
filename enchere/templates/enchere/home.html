@@ -1,0 +1,16 @@
+{% extends 'enchere/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+    <h2>Plateforme de ventes aux enchères en ligne</h2>
+    <p>Enchérissez, gagnez et vendez en toute simplicité.</p>
+
+    <div class="hero-buttons">
+        <a href="{% url 'signup' %}" class="btn-primary">S'inscrire</a>
+        <a href="{% url 'login' %}" class="btn-secondary">Se connecter</a>
+    </div>
+</section>
+
+{% endblock %}
