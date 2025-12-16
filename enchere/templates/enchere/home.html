@@ -2,15 +2,19 @@
 {% load static %}
 
 {% block content %}
+<header class="hero">
+    <nav class="navbar">
+        <h1 class="logo">RoyalBid</h1>
+        <div class="nav-links">
+            <a href="{% url 'login' %}">Connexion</a>
+            <a href="{% url 'signup' %}" class="btn">S'inscrire</a>
+        </div>
+    </nav>
 
-<section class="hero">
-    <h2>Plateforme de ventes aux enchères en ligne</h2>
-    <p>Enchérissez, gagnez et vendez en toute simplicité.</p>
-
-    <div class="hero-buttons">
-        <a href="{% url 'signup' %}" class="btn-primary">S'inscrire</a>
-        <a href="{% url 'login' %}" class="btn-secondary">Se connecter</a>
+    <div class="hero-content">
+        <h2>Tout se joue aux enchères</h2>
+        <p>Découvrez, enchérissez et remportez des objets uniques en toute confiance.</p>
+        <a href="{% url 'signup' %}" class="hero-btn">Commencer maintenant</a>
     </div>
-</section>
-
+</header>
 {% endblock %}
