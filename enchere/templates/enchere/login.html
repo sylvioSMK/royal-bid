@@ -6,8 +6,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="auth-container">
-
+<div class="auth-page">
     <div class="auth-box">
         <h2>Connexion</h2>
         <p>Accédez à votre espace d’enchères</p>
@@ -21,10 +20,5 @@
 
         <a href="{% url 'signup' %}">Créer un compte</a>
     </div>
-
-    <div class="auth-image">
-        <img src="{% static 'enchere/images/enchere.jpg' %}" alt="Enchères">
-    </div>
-
 </div>
 {% endblock %}

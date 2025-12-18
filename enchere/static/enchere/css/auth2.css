@@ -1,4 +1,4 @@
-/* AUTH BACKGROUND */
+/* AUTH PAGE BACKGROUND */
 .auth-page {
     min-height: 100vh;
     background: url("../images/enchere.jpg") center/cover no-repeat;
@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Inter', sans-serif;
 }
 
 /* OVERLAY */
@@ -15,8 +16,8 @@
     inset: 0;
     background: linear-gradient(
         120deg,
-        rgba(0,0,0,0.9),
-        rgba(0,0,0,0.6)
+        rgba(0, 0, 0, 0.92),
+        rgba(0, 0, 0, 0.65)
     );
 }
 
@@ -24,36 +25,43 @@
 .auth-box {
     position: relative;
     z-index: 2;
-    width: 380px;
-    padding: 40px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(15px);
-    border-radius: 18px;
-    box-shadow: 0 0 40px rgba(0,246,255,0.15);
+    width: 400px;
+    padding: 45px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    box-shadow: 0 0 45px rgba(0, 246, 255, 0.18);
     text-align: center;
 }
 
 /* TITLES */
 .auth-box h2 {
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 8px;
 }
 
 .auth-box p {
-    color: #aaa;
+    color: #b5b5b5;
     margin-bottom: 30px;
+    font-size: 14px;
 }
 
 /* INPUTS */
 .auth-box input {
     width: 100%;
-    padding: 14px;
+    padding: 14px 18px;
     margin-bottom: 18px;
     border-radius: 30px;
     border: none;
     outline: none;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     color: white;
+    font-size: 14px;
+}
+
+.auth-box input::placeholder {
+    color: #aaa;
 }
 
 /* BUTTON */
@@ -67,17 +75,23 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 15px;
 }
 
 .auth-box button:hover {
-    box-shadow: 0 0 20px #00f6ff;
+    box-shadow: 0 0 25px #00f6ff;
+    transform: translateY(-2px);
 }
 
 /* LINKS */
 .auth-box a {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 22px;
     color: #00f6ff;
     text-decoration: none;
     font-size: 14px;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
 }
